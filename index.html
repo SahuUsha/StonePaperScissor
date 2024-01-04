@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(image/back3.jpg);
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            justify-content: center;
+
+
+        }
+
+        .head {
+            border: 3px solid white;
+            width: 480px;
+            background-color: rgb(40, 100, 146);
+            justify-content: center;
+            margin-top: 160px;
+            margin-left: 500px;
+            height: 500px;
+            opacity: 0.7;
+            transition: all 1s ease-in-out 0.3s;
+        }
+        .head:hover {
+            height: 510px;
+            width: 510px;
+            background-color: rgb(49, 136, 202);
+            display: block;
+        }
+        .head h2 {
+            text-shadow: 2px 2px 2px black;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            font-size: 40px;
+            color: #ffffff;
+        }
+        .contactform .inputbox {
+            position: relative;
+            width: 85%;
+            margin-top: 33px;
+            margin-left: 37px;
+            /* margin-left: 45px; */
+            opacity: 0.8;/
+        }
+        .contactform .inputbox input,
+        .contactform .inputbox textarea {
+            width: 100%;
+            padding: 15px 0px;
+            /* padding: 18px 0px; */
+            /* padding-bottom: 18px; */
+            /* padding-top: 18px; */
+            /* padding-bottom: 2px;  */
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            border-bottom: 2px solid #000000;
+            outline: none;
+            resize: none;
+            transition: 0.5;
+        }
+        .contactform .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 7px 0;
+            font-size: 20px;
+            padding-left: 9px;
+            margin: 5px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #141414;
+        }
+        .contactform .inputbox input:focus~span,
+        .contactform .inputbox input:valid~span,
+        .contactform .inputbox textarea:focus~span,
+        .contactform .inputbox textarea:valid~span {
+           
+            color: yellow;
+            text-shadow: 2px 3px 3px black;
+            font-size: 20px;
+            font-weight: bold;
+            transform: translateY(-34px);
+
+        }
+
+        .contactform .inputbox button[type="Submit"] {
+            width: 120px;
+            background: rgb(255, 0, 93);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            align-items: center;
+            padding: 12px 16px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 12px;
+            margin-left: 135px;
+        }
+        .social-med {
+            font-size: 32px;
+            margin-top: 25px;
+            margin-left: 100px;
+            color: black;
+        }
+        @media screen and (max-width: 400px) {
+            .head {
+                /* border: 3px solid white; */
+                width: 310px;
+                /* background-color: rgb(40, 100, 146); */
+                justify-content: space-between;
+                margin-top: 150px;
+                margin-left: 30px;
+                height: 500px;
+                margin-right: 80px;
+
+                opacity: 0.7;
+                transition: all 1s ease-in-out 0.3s;
+            }
+            .head:hover {
+                height: 510px;
+                width: 330px;
+                /* background-color: rgb(0, 69, 167); */
+                background-color: rgb(49, 136, 202);
+                display: block;
+            }
+            .contactform .inputbox button[type="Submit"] {
+
+                margin-left: 58px;
+            }
+            .social-med {
+                font-size: 22px;
+                margin-top: 25px;
+                margin-left: 62px;
+            }
+        }
+        @media screen and (min-width: 400px) and (max-width: 500px) {
+            .head {
+                border: 3px solid white;
+                width: 345px;
+                background-color: rgb(40, 100, 146);
+                justify-content: center;
+                margin-top: 160px;
+                margin-left: 60px;
+                height: 500px;
+                opacity: 0.7;
+                transition: all 1s ease-in-out 0.3s;
+            }
+            .head:hover {
+                height: 510px;
+                width: 355px;
+                background-color: rgb(49, 136, 202);
+                display: block;
+            }
+            .contactform .inputbox button[type="Submit"] {
+                margin-left: 70px;
+            }
+            .social-med {
+                font-size: 25px;
+                margin-top: 25px;
+                margin-left: 62px;
+            }
+        }
+        @media screen and (min-width: 500px) and (max-width: 600px) {
+            .head {
+                border: 3px solid white;
+                width: 400px;
+                justify-content: center;
+                margin-top: 160px;
+                margin-left: 80px;
+            }
+            .head:hover {
+                height: 510px;
+                width: 410px;
+            }
+            .contactform .inputbox button[type="Submit"] {
+                margin-left: 95px;
+            }
+            .social-med {
+                font-size: 32px;
+                margin-top: 25px;
+                margin-left: 60px;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 700px) {
+            .head {
+                border: 3px solid white;
+                width: 440px;
+                justify-content: center;
+                margin-top: 160px;
+                margin-left: 100px;
+            }
+            .head:hover {
+                height: 510px;
+                width: 455px;
+            }
+            .contactform .inputbox button[type="Submit"] {
+
+                margin-left: 110px;
+            }
+            .social-med {
+                font-size: 32px;
+                margin-top: 25px;
+                margin-left: 75px;
+            }
+        }
+        @media screen and (min-width: 700px) and (max-width: 900px) {
+            .head {
+                border: 3px solid white;
+                width: 460px;
+
+                justify-content: center;
+                margin-top: 160px;
+                margin-left: 140px;
+
+            }
+            .head:hover {
+                height: 510px;
+                width: 480px;
+                background-color: rgb(51, 142, 211);
+            }
+        }
+
+        @media screen and (min-width: 900px) and (max-width: 1000px) {
+            .head {
+                border: 3px solid white;
+                width: 470px;
+                justify-content: center;
+                margin-top: 160px;
+                margin-left: 200px;
+            }
+            .head:hover {
+                height: 510px;
+                width: 500px;
+                background-color: rgb(51, 142, 211);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="noaction.php">
+            <div class="contactform">
+                <div class="head">
+                    <h2>User Login </h2>
+                    <div class="inputbox">
+                        <input type="text" required="required">
+                        <span>Username</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="password" required="required">
+                        <span class="formerror">password</span>
+                    </div>
+                    <div class="inputbox">
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+
+                    <div class="social-med">
+                        <i class="fab fa-facebook-f" class="icon">&nbsp &nbsp</i>
+                        <i class="fab fa-whatsapp" class="icon">&nbsp &nbsp</i>
+                        <i class="fab fa-twitter" class="icon">&nbsp &nbsp</i>
+                        <i class="fab fa-pinterest" class="icon">&nbsp &nbsp</i>
+                        <i class="fab fa-instagram" class="icon">&nbsp &nbsp</i>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+
+</html>
