@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #afbfd1;
+    text-align: center;
+}
+h1{
+    background-color: #252e4a;
+    color: white;
+   /* padding: 0.4rem; */
+   height: 3.7rem;
+  line-height: 3.5rem;
+    text-align: center;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height:50vh; */
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: #060f1a;
+    opacity: 0.8;
+
+}
+.choice{
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice img{
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    font-size: 28px;
+    padding: 4rem;
+}
+#yourscore , #compScore{
+    font-size: 41px;
+}
+#msg{
+border: none ;
+background-color: #161c2c;
+color: white;
+font-size: 27px;
+display: inline;  
+padding: 0.9rem;
+border-radius: 0.5rem;
+/* jitna hamara content hai  */
+}
+.btn{
+    margin: 40px;
+    
+}
+#resetbtn{
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color:  #4c5c6e;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    border: 2px solid  #3f4b5b;
+}
+#resetbtn:hover{
+    background-color:   #5a6e84 ;
+    padding: 0.8rem;
+}
